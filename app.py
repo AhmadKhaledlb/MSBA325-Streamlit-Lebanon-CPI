@@ -221,6 +221,12 @@ fig2.update_layout(
 
 st.plotly_chart(fig2, use_container_width=True)
 
+if len(year_inflation) < 12:
+    st.caption(
+        f"Note: {selected_year} contains {len(year_inflation)} months of data "
+        "in the source dataset, so only available months are shown."
+    )
+
 highest_row = year_inflation.loc[year_inflation["Value"].idxmax()]
 lowest_row = year_inflation.loc[year_inflation["Value"].idxmin()]
 
