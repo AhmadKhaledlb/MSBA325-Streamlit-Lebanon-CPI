@@ -20,6 +20,5 @@ The app includes two linked interaction features. The user first selects a year 
 - Pandas
 - Plotly
 
-## App
-
-Public Streamlit link will be added after deployment.
+Public Streamlit app:
+https://lebanon-cpi-msba325.streamlit.app
